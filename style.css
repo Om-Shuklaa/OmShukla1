@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: url('https://source.unsplash.com/1920x1080/?dark-forest,haunted') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  background-color:gray;
+}
+
+.container {
+  text-align: center;
+  padding: 20%;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.whisper-text {
+  font-size: 1.5em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  animation: flicker 2s infinite;
+}
+
+.enter-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 30px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.enter-btn:hover {
+  background: darkred;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px red;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.5;
+  }
+}
